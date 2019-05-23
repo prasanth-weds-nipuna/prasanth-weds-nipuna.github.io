@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML, CSS, JS, Template"> 
+    <title>Prasanth Nipuna</title>
+
+    <link href="assets/css/snow.css" rel="stylesheet" type="text/css" media="all" /><!-- snow stylesheet -->
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/loves.png">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Open+Sans:400,600,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Normalization -->
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="56">
+    <!-- Navigation Menu -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-toggleable-md banner-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-navicon fa-lg"></span>
+				</button>
+            <a class="smoothscroll navbar-brand" href="#home"><img src="assets/images/logo.png" alt="logo"></a>
+            <div class="collapse navbar-collapse flex-row-reverse" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="smoothscroll nav-link" href="#home">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smoothscroll nav-link" href="#about">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smoothscroll nav-link" href="#story">our story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smoothscroll nav-link" href="#gallery">photo gallery</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="smoothscroll nav-link" href="#weddingevents">wedding events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smoothscroll nav-link" href="#invitation">Invitation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smoothscroll nav-link" href="#family">family wishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smoothscroll nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Slider -->
+    <div id="home"></div>
+    <div class="main-slider">
+        <div class="snow-container">
+          <div class="snow foreground"></div>
+          <div class="snow foreground layered"></div> 
+          <div class="snow background"></div>
+          <div class="snow background layered"></div>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> 
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="slider-image" src="assets/images/slider2.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                        <div class="underlay"></div>
+                        <div class="content">
+                         <h3 class="slider_names">Prasanth<img src="assets/images/hearts.png">Nipuna</h3>
+                             
+                            <h3 class="slider_text">Love Laughter And Happily Ever After</h3>
+                             
+                            <p class="smoothscroll btn btn-light">June 13th 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="slider-image" src="assets/images/slider3.jpg" alt="Second slide">
+                    <div class="carousel-caption ">
+                        <div class="underlay"></div>
+                        <div class="content">
+                             
+                             <h3 class="slider_names">Prasanth <img src="assets/images/hearts.png"> Nipuna</h3>
+                            <h3 class="slider_text">We are Getting Married</h3>
+                            
+                            <p class="smoothscroll btn btn-light">June 13th 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="slider-image" src="assets/images/slider1.jpg" alt="Third slide">
+                    <div class="carousel-caption ">
+                        <div class="underlay"></div>
+                        <div class="content">
+                           
+                            <h3 class="slider_names">Prasanth <img src="assets/images/hearts.png"> Nipuna</h3>
+                            <h3 class="slider_text">Join us for celebration</h3>
+                             
+                            <p class="smoothscroll btn btn-light">June 13th 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div id="about"></div>
+    <section class="about-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col col-sm-12">
+                    <h1 class="heading"><span>about us</span></h1>
+                    <p class="sub-heading">Two souls but a single thought. Two hearts that beat as one.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <canvas id="canvas"></canvas>
+                <div class="col-12 col-sm-10 wow slideInDown">
+                    <img src="assets/images/about-us.jpg" class="img-fluid" />
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 groom wow slideInLeft">
+                            <h3 class="groom-name">Prasanth</h3>
+                            <p class="description">One day you meet someone for some inexplicable reason. You feel more connected to this stranger than anyone else. The fact is HEART connects.</p>           
+                        </div>
+                        <div class="col-12 col-md-6 bride wow slideInRight">
+                            <h3 class="bride-name">Nipuna</h3>
+                            <p class="description">You can talk with someone for years, everyday, and still, it won’t mean as much as what you can have when you sit in front of someone, not saying a word, yet you feel that person with your heart, you feel like you have known the person for forever, connections are made with the heart and i got my special one for lifetime..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <div id="story"></div>
+    <section class="our-history">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col col-sm-12">
+                    <h1 class="heading"><span>our story</span></h1>
+                    <p class="sub-heading">Love begins in a moment, grows overtime and lasts for eternity.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 wow fadeInRight">
+                            <div class="image-card">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/6.jpg" alt="Card image cap">
+                                    <div class="card-body circle">
+                                        <h4 class="card-title">Our First Meet</h4>
+                                        <p class="card-text">Our families met eachother on <i class="spl-date">Feb 10th</i>  where we saw each other and that's how our journey started..When we met for the first time, it is not love at first sight but it’s a moment of recognition, we felt a strong connection with each other. Our thoughts got exchanged and then eventually and gradually we fell in love with each other..
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-10 wow fadeInRight">
+                            <div class="image-card">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/9.jpg" alt="Card image cap">
+                                    <div class="card-body circle">
+                                    <h4 class="card-title">Our Proposal Day</h4>
+                                        <p class="card-text">
+                                            In your lifetime you will find and meet one person who will love you more than anybody you have ever known and will know.It is very exciting to say that now my special one has entered my life on <i class="spl-date">Feb 14th</i>  and our hearts exchanged the felling of love.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center right-panel topping">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 wow fadeInLeft">
+                            <div class="image-card">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/card-3.jpg" alt="Card image cap">
+                                    <div class="card-body circle2">
+                                        <h4 class="card-title">Our Lovely Engagement</h4>
+                                        <p class="card-text">Engagement is not the celebration of an exquisite ring on finger, it’s about the beginning of a new era that we both have entered fully by exchanging the sweetest of our dreams on <i class="spl-date">May 17th</i>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-10 wow fadeInLeft">
+                            <div class="image-card">
+                                <div class="card">
+                                    <img class="card-img-top" src="assets/images/card-5.jpg" alt="Card image cap">
+                                    <div class="card-body circle2">
+                                        <h4 class="card-title">Our decision on marriage</h4>
+                                        <p class="card-text">Love is tingly, joyful feeling. Commitment is a choice,a decision.  MARRIAGE should have both love and commitment.So we decided to spend the rest of our life with each other and we wanted to start our life as soon as possible by taking our first step to eternity and share our special bond on <i class="spl-date">June 13th</i>. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter -->
+    <section class="counter">
+        <div class="container">
+            <div class="row text-center individual">
+                <div class="col-3 wow tada">
+                    <img src="assets/images/count-number-bg.png" alt="Counter Background">
+                    <h1 id="days"></h1>
+                    <h5>Days</h5>
+                </div>
+                <div class="col-3 wow tada">
+                    <img src="assets/images/count-number-bg.png" alt="Counter Background">
+                    <h1 id="hours"></h1>
+                    <h5>Hours</h5>
+                </div>
+                <div class="col-3 wow tada">
+                    <img src="assets/images/count-number-bg.png" alt="Counter Background">
+                    <h1 id="minutes"></h1>
+                    <h5>Minutes</h5>
+                </div>
+                <div class="col-3 wow tada">
+                    <img src="assets/images/count-number-bg.png" alt="Counter Background">
+                    <h1 id="seconds"></h1>
+                    <h5>Seconds</h5>
+                </div>
+            </div>
+            <div class="row text-center allInOne">
+                <div class="col-12 wow tada">
+                    <img src="assets/images/count-number-bg.png" alt="Counter Background">
+                    <h1 id="all"></h1>
+                    <h5>D : H : M : S</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <div id="gallery"></div>
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col col-sm-12">
+                    <h1 class="heading"><span>photo gallery</span></h1>
+                    <p class="sub-heading">Ever thine..Ever mine..Ever ours..</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-12">
+                        <ul id="filter-list" class="clearfix controls">
+                            <li class="filter" data-filter="all">All</li>
+                            <li class="filter" data-filter=".engage">ENGAGEMENT</li>
+                            <li class="filter" data-filter=".party">FAMILY</li>
+                            <li class="filter" data-filter=".night">FRIENDS</li>
+                        </ul>
+
+                        <ul id="portfolio">
+                            <div class="row">
+                                <li class="col-12 col-sm-6 col-lg-3 wow fadeInDown mix party night">
+                                    <a href="#">
+                                        <img src="assets/images/1.jpg" class="img img-fluid" alt="">
+                                    </a>
+                                </li>
+                                <li class="col-12 col-sm-6 col-lg-3 wow fadeInDown mix engage night">
+                                    <a href="#">
+                                        <img src="assets/images/2.jpg" class="img img-fluid" alt="">
+                                    </a>
+                                </li>
+                                <li class="col-12 col-sm-6 col-lg-3 wow fadeInDown mix engage">
+                                    <a href="#">
+                                        <img src="assets/images/3.jpg" class="img img-fluid" alt="">
+                                    </a>
+                                </li>
+                                <li class="col-12 col-sm-6 col-lg-3 wow fadeInDown mix night">
+                                    <a href="#">
+                                        <img src="assets/images/7.jpg" class="img img-fluid" alt="">
+                                    </a>
+                                </li>
+                                <li class="col-12 col-sm-6 col-lg-3 wow fadeInDown mix party">
+                                    <a href="#">
+                                        <img src="assets/images/gallery-photo-5.jpg" class="img img-fluid" alt="">
+                                    </a>
+                                </li>
+                                <li class="col-12 col-sm-6 col-lg-3 wow fadeInDown mix engage">
+                                    <a href="#">
+                                        <img src="assets/images/gallery-photo-6.jpg" class="img img-fluid" alt="">
+                                    </a>
+                                </li>
+                                <li class="col-12 col-sm-6 col-lg-3 wow fadeInDown mix engage">
+                                    <a href="#">
+                                        <img src="assets/images/gallery-photo-7.jpg" class="img img-fluid" alt="">
+                                    </a>
+                                </li>
+                                <li class="col-12 col-sm-6 col-lg-3 wow fadeInDown mix engage party">
+                                    <a href="#">
+                                        <img src="assets/images/gallery-photo-8.jpg" class="img img-fluid" alt="">
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div> 
+    </section>
+
+  <!-- Wedding Events -->
+    <div id="weddingevents"></div>
+    <section class="latest-events">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col col-sm-12">
+                    <h1 class="heading"><span>Our Wedding Events</span></h1>
+                    <p class="sub-heading">Marriage is the beginning—the beginning of the family—and is a life-long commitment.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 col-md-4 image-grid">
+                    <div class="card">
+                        <div class="image-overlay"></div>
+                        <p class="title">Haldi Ceremony</p>
+                        <img class="card-img-top" src="assets/images/haldis.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"><b>Haldi ceremony</b> is a ritual held at both the bride and the groom’s place separately, usually in their respective homes.In the presence of elders and relatives the young Man and Woman are officially announced as Groom and Bride to be WED shortly.</p>
+                        </div>
+                    </div>
+                    <div class="text-overlay wow bounceInLeft">
+                        <p>June 12th, 2019</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 image-grid">
+                    <div class="card">
+                        <div class="image-overlay"></div>
+                        <p class="title">sumuhurtham</p>
+                        <img class="card-img-top" src="assets/images/wedding.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"><b>Mangalyadharana :</b> the first knot symbolizes the union and commitment of the couple, the second the union and commitment of the two families and the third an assurance from the groom's family to ensure the bride's well-being.</p>
+                        </div>
+                    </div>
+                    <div class="text-overlay wow bounceInUp">
+                        <p>June 13th, 2019</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 image-grid">
+                    <div class="card">
+                        <div class="image-overlay"></div>
+                        <p class="title">Vratam</p>
+                        <img class="card-img-top" src="assets/images/vratam.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text"><b>Satyanarayana Vratam</b> is very much important for the newly married couple as the blessings from this God will always keep the couple happy for life. It is believed that if this God is prayed then it will bring in peace, prosperity, and progeny. </p>
+                        </div>
+                    </div>
+                    <div class="text-overlay wow bounceInRight">
+                        <p>June 14th, 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invitation -->
+    <div id="invitation"></div>
+    <section class="wedding-invitation"> 
+            <div class="text-center">
+                <div class="col col-sm-12">
+                    <h1 class="heading"><span>Invitation</span></h1>      
+                </div>
+            </div>
+            <div class="text-center">               
+                <div class="property-grids">
+                    <div class="agile-homes-w3l  grid">
+                        <div class="col-md-6 home-agile-left float-left">
+                           <figure class="effect-moses">
+                                    <img src="assets/images/p1.jpg" alt="">
+                                    <figcaption>
+                                        <h4>We are engaged now!</h4>
+                                        <p>“He asked me, I said yes…And the chapter of our life begins”</p>
+                                    </figcaption>           
+                            </figure>
+                        </div>
+                        <div class="col-md-6 home-agile-text float-right">
+                           <h4>Engaged!!</h4>
+                           <p>We are brought together and LOVE is gonna seal the bond forever Yes!! We are engaged on</p>
+                            <div class="date">
+                               <h5><i class="fa fa-calendar" aria-hidden="true"></i> May 17th 2019</h5>
+                               <h5><i class="fa fa-clock-o" aria-hidden="true"></i> 11.00am</h5>
+                            </div>
+                            <div class="icon_wthree">
+                                <img src="assets/images/engagement.png" alt="" class="rotating-icon">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>                     
+                       
+                        <div class="col-md-6 home-agile-left float-right">
+                            <figure class="effect-moses">
+                                <img src="assets/images/p2.jpg" alt="">
+                                <figcaption>
+                                    <h4>We are getting married!</h4>
+                                    <p>The highest happiness on earth is the happiness of marriage.</p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                         <div class="col-md-6 home-agile-text float-left">
+                           <h4>Wedding</h4>
+                           <p>"Destiny bought us together and now love will seal our bond forever.." Together with our parents we invite you to share in the joy of begining our new life together as we exchange vows.</p>
+                           <div class="date">
+                               <h5><i class="fa fa-calendar" aria-hidden="true"></i> June 13th 2019</h5>
+                               <h5><i class="fa fa-clock-o" aria-hidden="true"></i> 10.58pm</h5>
+                           </div>
+                           <div class="icon_wthree">
+                           <img src="assets/images/mywedding.png" class="wedding-icon">
+                          <!--  <i class="fa fa-cutlery" aria-hidden="true"></i>-->
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>    
+                    </div>
+                 </div>
+            </div> 
+    </section>
+
+    <!-- Family Wishes -->
+    <div id="family"></div>
+    <section class="family-wishes">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col col-sm-12">
+                    <h1 class="heading"><span>Family wishes</span></h1>
+                    <p class="sub-heading">Being a family means you are a part of something very wonderful.It means you will love and be loved for the rest of your life. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active">
+                            </li>
+                            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <img src="assets/images/mara.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="col-12 wedding-message">
+                                            <p class="custom-font">As you start this new journey in life, may every day hold wonderful shared experiences! May you always remember the love shared on this special day. Congratulations on your wedding!!</p>
+                                            <h5 class="custom-name">Sharma & Kameshwari</h5>
+                                            <p class="custom-name">Groom's parents</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <img src="assets/images/mara.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="col-12 wedding-message">
+                                            <p class="custom-font">Marriage is the great joy, stay blessed and happy in each other's company.May your bond be strengthen with time and your love grows with age.Wishing you a both very happy married life.</p>
+                                            <h5 class="custom-name">BSR Anjaneyulu & Padmavathi</h5>
+                                            <p class="custom-name">Bride's parents</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <img src="assets/images/mara.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="col-12 wedding-message">
+                                            <p class="custom-font">To my lovely Sister and Brother-in-law,this marriage is just a begining of the wonderful life together. A long way to go! Stay blessed and be happy always. Wishing you both a lifetime of everlasting love and happiness!
+                                            Congrats on your special day!
+                                            </p>
+                                            <h5 class="custom-name">Chaitanya Kumar & Darshana & Tejas</h5>
+                                            <p class="custom-name">Bride's Sister & Brother-in-law</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <img src="assets/images/mara.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="col-12 wedding-message">
+                                            <p class="custom-font">My sweet little princess has finally found her prince charming.I am so glad that you have found your Mister.Right who makes you feel so special.
+                                            Congratulations on marrying the man you love so much. You two look perfect and madly in love with each other. 
+                                            Cheers for the beautiful bride and handsome groom!!
+                                            <h5 class="custom-name">Pradeep & Sahana</h5>
+                                            <p class="custom-name">Bride's Sister & Brother-in-law</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <img src="assets/images/mara.jpg" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="col-12 wedding-message">
+                                            <p class="custom-font">Marriage is a beautiful time when two souls start to share one heart. Let your love for each other grow with every passing day.Dear brother, its your special day.Sister-in-law,thanks for coming our way. May you both be blessed in all that you do.Wishing you a lifetime of love!</p>
+                                            <h5 class="custom-name">Krishna & Lavanya & Kruthik</h5>
+                                            <p class="custom-name">Groom's Sister & Brother-in-law</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Contact Us -->
+    <div id="contact"></div>
+    <section class="contact">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col col-sm-12">
+                    <h1 class="heading"><span>Wedding location</span></h1>
+                    <p class="sub-heading">Amma kalyana mandapam, 52-2/1/2, ITI Rd, Opposite Bus Stop, Siddhartha Nagar, Vijayawada, Andhra Pradesh 520010</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-sm-12">
+                    <div class="contact-form justify-content-center">
+                        <h1 class="heading text-center">The best gift will be your participation, thanks to all</h1>
+                        <p class="signature text-center">PRASANTH & NIPUNA</p>
+                        <div id="heart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.356826418053!2d80.64864326486428!3d16.508073788611153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fab4226de8b3%3A0x56fbd139aeba1c50!2sAmma+Function+Hall%2C+Siddhartha+Nagar%2C+Benz+Circle%2C+Vijayawada%2C+Andhra+Pradesh+520010!5e0!3m2!1sen!2sin!4v1553689517028" width="600" height="540" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center footer-menu">
+                <div class="col col-sm-12">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item wow fadeIn" data-wow-delay="0.7s">
+                            <a class="smoothscroll" href="#home">home</a>
+                        </li>
+                        <li class="list-inline-item wow fadeIn" data-wow-delay="0.6s">
+                            <a class="smoothscroll" href="#about">about us</a>
+                        </li>
+                        <li class="list-inline-item wow fadeIn" data-wow-delay="0.5s">
+                            <a class="smoothscroll" href="#story">our story</a>
+                        </li>
+                        <li class="list-inline-item wow fadeIn" data-wow-delay="0.4s">
+                            <a class="smoothscroll" href="#gallery">photo gallery</a>
+                        </li>
+                         <li class="list-inline-item wow fadeIn" data-wow-delay="0.1s">
+                            <a class="smoothscroll" href="#weddingevents">wedding events</a>
+                        </li>
+                        <li class="list-inline-item wow fadeIn" data-wow-delay="0.3s">
+                            <a class="smoothscroll" href="#invitation">Invitation</a>
+                        </li>                       
+                        <li class="list-inline-item wow fadeIn" data-wow-delay="0.2s">
+                            <a class="smoothscroll" href="#family">family wishes</a>
+                        </li>
+                        <li class="list-inline-item wow fadeIn">
+                            <a class="smoothscroll" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+            <div class="copyright-section">
+                <p class="text-center">&copy; Copyright 2019. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+     <script src="assets/js/hearts.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
