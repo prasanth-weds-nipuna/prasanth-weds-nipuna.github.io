@@ -99,7 +99,8 @@
     .main-slider .carousel-inner img.slider-image {
         min-width: 1470px;
         width: 100%;
-        height: auto;
+        height: 650px;
+        object-fit: cover;
     }
     
     .main-slider .carousel-indicators {
@@ -160,7 +161,7 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 35%;
+        height: 50%;
         max-height: 260px;
         width: 50%;
         max-width: 750px;
@@ -312,6 +313,7 @@
         border-radius: 60px;
         margin-top: 60px;
         margin-bottom: 60px;
+        max-width:65%;
     }
     
     section.about-us .row .groom,
@@ -689,7 +691,7 @@
     section.photo-gallery .container-fluid .row .col-sm-6 img,
     section.photo-gallery .container-fluid .row .col-lg-3 img {
         width: 340px;
-        height: 377px;
+        height: 377px; 
     }
      @media(max-width: 812px) {
          section.photo-gallery .container-fluid .row .col-12 img,
@@ -914,6 +916,9 @@
         left: 0;
         right: 0;
         margin: 0 auto;
+        width: 152px;
+        height: 152px;
+        object-fit: cover;
     }
     
     .family-wishes .carousel-item .carousel-caption .wedding-message {
@@ -1406,6 +1411,9 @@ figure.effect-moses img {
     opacity: 0.85;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
+    width: 674px;
+    height: 505px;
+    object-fit: cover;
 }
 
 figure.effect-moses h4,
