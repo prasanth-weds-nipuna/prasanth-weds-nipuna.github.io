@@ -691,14 +691,14 @@
     section.photo-gallery .container-fluid .row .col-sm-6 img,
     section.photo-gallery .container-fluid .row .col-lg-3 img {
         width: 340px;
-        height: 377px; 
+        height: 250px; 
     }
      @media(max-width: 812px) {
          section.photo-gallery .container-fluid .row .col-12 img,
         section.photo-gallery .container-fluid .row .col-sm-6 img,
         section.photo-gallery .container-fluid .row .col-lg-3 img {
             width: 406px;
-            height: 377px;
+            height: 250px;
         }
     }
     section.photo-gallery .container-fluid .portfolio .img-fluid {
