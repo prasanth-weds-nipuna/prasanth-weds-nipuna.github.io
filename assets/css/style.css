@@ -102,8 +102,13 @@
         height: 650px;
         object-fit: cover;
     }
-
-    @media (max-width: 1024px) and (min-width: 375px){
+     @media (max-width: 411px){
+        .main-slider .carousel-inner img.slider-image {
+            height: 320px;
+            min-width:50px;
+        }
+     }
+    @media (max-width: 1024px) and (min-width: 420px){
         .main-slider .carousel-inner img.slider-image {
             min-width:100px;
             height: 740px;
@@ -177,7 +182,7 @@
     
     .main-slider .carousel-caption .slider_text{
         font-family: 'Rouge Script', cursive;
-        font-size: 45px;
+        font-size: 36px;
     }
     .main-slider .carousel-caption .slider_names{
         font-family: 'Rouge Script', cursive;
@@ -187,6 +192,11 @@
         .main-slider .carousel-caption .slider_names{
             font-family: 'Rouge Script', cursive;
             font-size:70px;
+        }
+    }
+    @media (max-width: 411px){
+        .main-slider .carousel-caption .slider_names{ 
+            font-size:34px;
         }
     }
     .main-slider .carousel-caption .underlay {
@@ -261,29 +271,23 @@
             width: 60%;
         }
     }
-    @media (min-width: 600px) and (max-width: 706px) {
+    @media (min-width: 420px) and (max-width: 767px) {
         .main-slider .carousel-caption {
             top: 45%;
             height: 36%;
-            width: 60%;
+            width: 100%;
         }
     }
-    
-    @media (min-width: 420px) and (max-width: 599px) {
+     
+    @media (max-width: 411px) {
         .main-slider .carousel-caption {
-            top: 45%;
-            height: 38%;
-            width: 65%;
+            height: 40%;
+            width: 100%;
+            top: 35%;
+            left: 50%;
         }
     }
-    
-    @media (max-width: 419px) {
-        .main-slider .carousel-caption {
-            height: 42%;
-            width: 70%;
-        }
-    }
-    
+       
     body section {
         padding-top: 100px;
     }
@@ -323,7 +327,7 @@
         margin-bottom: 60px;
         max-width:65%;
     }
-    @media (min-width: 375px) and (max-width: 1024px){
+    @media (min-width: 320px) and (max-width: 1024px){
         section.about-us img {
             max-width: 100%;
         }
@@ -465,31 +469,6 @@
         line-height: 1.5rem;
         text-align: left;
     }
-    section.our-history .image-card .card .card-img-top {
-        width: 405px;
-        height:270px;
-    }
-
-    @media(max-width:767px) {
-        section.our-history .image-card .card .card-img-top {
-            width: 306px;
-            height:270px;
-        }
-    }
-
-     @media(min-width:768px) and (max-width: 1023px){
-        section.our-history .image-card .card .card-img-top {
-            width: 230px;
-            height:270px;
-        }
-    }
-
-     @media(min-width: 1024px) and (max-width: 1200px) {
-        section.our-history .image-card .card .card-img-top {
-            width: 328px;
-            height:270px;
-        }
-    }
 
     .topping:before {
         content: url('../images/topping.png');
@@ -503,8 +482,7 @@
         position: relative;
         right: 52.8%;
         top: 0px;
-        background-color: white;
-        /*padding-bottom: 100px;*/
+        background-color: white; 
     }
     
     .circle:after {
@@ -693,25 +671,19 @@
         margin: 0 0 0 0;
         text-align: center;
     }
-    
-    /*section.photo-gallery .container-fluid .row .col-12 img,
-    section.photo-gallery .container-fluid .row .col-sm-6 img,
-    section.photo-gallery .container-fluid .row .col-lg-3 img {
-        width: 100%;
-        height: auto;
-    }*/
+ 
      section.photo-gallery .container-fluid .row .col-12 img,
     section.photo-gallery .container-fluid .row .col-sm-6 img,
     section.photo-gallery .container-fluid .row .col-lg-3 img {
         width: 340px;
-        height: 250px; 
+        height: 220px; 
     }
      @media(max-width: 812px) {
          section.photo-gallery .container-fluid .row .col-12 img,
         section.photo-gallery .container-fluid .row .col-sm-6 img,
         section.photo-gallery .container-fluid .row .col-lg-3 img {
             width: 406px;
-            height: 250px;
+            height: 220px;
         }
     }
     section.photo-gallery .container-fluid .portfolio .img-fluid {
@@ -1146,6 +1118,12 @@
         }
     }
     
+    @media (min-width: 736px)and (max-width: 767px) {
+        section.latest-events .text-overlay {
+            top: 45% !important;
+        }
+    }
+
     @media (max-width: 767px) {
         section.latest-events .text-overlay {
             top: 60%;
@@ -1393,11 +1371,11 @@ figure {
     }
     figure.effect-moses h4 {
         width: 40% !important;
-        height: 45% !important;
+        height: 30% !important;
     }
     figure.effect-moses p {
         width:60% !important;
-        height: 50% !important;
+        height: 40% !important;
     }
 }
 
@@ -1428,7 +1406,16 @@ figure.effect-moses img {
     height: 505px;
     object-fit: cover;
 }
-
+@media(max-width: 420px){
+    figure.effect-moses img {
+        width:400px;
+    }
+}
+@media(min-width: 420px) and (max-width: 812px){
+    figure.effect-moses img {
+        width:100%;
+    }
+}
 figure.effect-moses h4,
 figure.effect-moses p { 
     width: 50%;
@@ -1437,7 +1424,7 @@ figure.effect-moses p {
 }
 
 figure.effect-moses h4 {
-     padding: 36px 20px 20px 20px;
+     padding: 30px 20px 20px 20px;
     width: 50%;
     color: #fff;
     font-size: 25px;
@@ -1472,7 +1459,7 @@ figure.effect-moses h4 {
         top: 50%;
         left: 50%;
         width: 35% !important;
-        height: 35% !important;
+        height: 40% !important;
     }
 }
 
