@@ -102,7 +102,7 @@
         height: 650px;
         object-fit: cover;
     }
-     @media (max-width: 411px){
+     @media (max-width: 414px){
         .main-slider .carousel-inner img.slider-image {
             height: 320px;
             min-width:50px;
@@ -194,7 +194,7 @@
             font-size:70px;
         }
     }
-    @media (max-width: 411px){
+    @media (max-width: 414px){
         .main-slider .carousel-caption .slider_names{ 
             font-size:34px;
         }
@@ -279,7 +279,7 @@
         }
     }
      
-    @media (max-width: 411px) {
+    @media (max-width: 414px) {
         .main-slider .carousel-caption {
             height: 40%;
             width: 100%;
