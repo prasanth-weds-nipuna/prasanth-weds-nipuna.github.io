@@ -188,7 +188,7 @@
         font-family: 'Rouge Script', cursive;
         font-size:80px;
     }
-    @media (max-width: 991px) and (min-width: 768px){
+    @media (max-width: 991px) and (min-width: 568px){
         .main-slider .carousel-caption .slider_names{
             font-family: 'Rouge Script', cursive;
             font-size:70px;
@@ -248,7 +248,12 @@
     .main-slider .carousel-caption .content img {
         max-width: 100%;
     }
-    
+    @media (max-width: 568px) {
+        .main-slider .carousel-caption .content img {
+            max-width: 50%;
+            width:15%;
+        }
+    }
     .main-slider .carousel-caption .content p {
         margin-top: 22px;
     }
@@ -1408,7 +1413,7 @@ figure.effect-moses img {
 }
 @media(max-width: 420px){
     figure.effect-moses img {
-        width:400px;
+        width:420px;
     }
 }
 @media(min-width: 420px) and (max-width: 812px){
@@ -1424,7 +1429,7 @@ figure.effect-moses p {
 }
 
 figure.effect-moses h4 {
-     padding: 30px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     width: 50%;
     color: #fff;
     font-size: 25px;
@@ -1439,14 +1444,14 @@ figure.effect-moses h4 {
 }
 @media(max-width: 420px) {
     figure.effect-moses h4 {
-        padding: 10px 20px;
+        padding: 10px 0px;
     }
     figure.effect-moses p {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 }
 
-@media(max-width: 991px) and (min-width: 421px) {
+@media(max-width: 822px) and (min-width: 421px) {
     figure.effect-moses h4 {
         position: absolute;
         top: 20%;
