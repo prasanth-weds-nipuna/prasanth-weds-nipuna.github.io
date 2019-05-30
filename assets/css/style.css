@@ -271,6 +271,14 @@
         border: none;
         box-shadow: none;
     }
+
+     @media (min-width: 320px) and (max-width: 414px) {
+        .main-slider .carousel-caption .content .smoothscroll.btn-light{
+            position: relative;
+            bottom: -20px;
+        }
+    }
+
     @media (min-width: 1024px) {
         .main-slider .carousel-caption { 
             width: 60%;
@@ -1451,7 +1459,7 @@ figure.effect-moses h4 {
     }
 }
 
-@media(max-width: 822px) and (min-width: 421px) {
+@media(max-width: 822px) and (min-width: 568px) {
     figure.effect-moses h4 {
         position: absolute;
         top: 20%;
@@ -1467,7 +1475,6 @@ figure.effect-moses h4 {
         height: 40% !important;
     }
 }
-
 
 figure.effect-moses p {
     float: right;
