@@ -571,7 +571,7 @@
     /* Counter Section */
     
     section.counter {
-        background-image: url('../images/counter-background.jpg');
+        background-image: url('../images/counter-background.gif');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -1171,7 +1171,7 @@
         padding-bottom: 50px; 
         height: auto;
         width: 100%;
-        background-image: url(../images/contact-background.jpg);
+        background-image: url(../images/contact-image.jpg);
     }
     
     section.contact h1.heading {
